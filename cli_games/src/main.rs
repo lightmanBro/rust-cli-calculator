@@ -67,7 +67,7 @@ fn guessing_game() {
     println!("\n{}", "🎯 Welcome to the Guessing Game!".bright_cyan().bold());
     println!("{}", "I'm thinking of a number between 1 and 100...".bright_black());
 
-    let secret_number = rand::thread_rng().gen_range(1..=100);
+    let secret_number: u32 = rand::thread_rng().gen_range(1..=100);
     let mut attempts = 0;
 
     loop {
